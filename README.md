@@ -836,9 +836,9 @@ Uma vez que um sistema é instalado e está sendo usado regularmente, novos requ
 
 3. Sistemas grandes geralmente têm certa quantidade de partes interessadas, com requisitos diferentes. Suas prioridades podem ser conflitantes ou contraditórias. Os requisitos finais são inevitavelmente um acordo, e algumas das partes interessadas devem receber prioridade.
 
-### 2.6.1 - Planejamento de Gestão de Requisitos
+### 2.6.1 - Planejamento de Gerenciamento de Requisitos
 
-O Planejamento de Gestão de Requisitos visa estabelecer como os diversos conjuntos de requisitos irão evoluir e ser gerenciados. Durante a fase de planejamento, uma série de questões deve ser resolvida:
+O Planejamento de Gerenciamento de Requisitos visa estabelecer como os diversos conjuntos de requisitos irão evoluir e ser gerenciados. Durante a fase de planejamento, uma série de questões deve ser resolvida:
 
 1. _Identificação dos Requisitos:_ Cada requisito deve ter uma identificação única para que possa ser referenciado a partir de outros requisitos e usado em avaliações de rastreabilidade;
 
@@ -848,17 +848,29 @@ O Planejamento de Gestão de Requisitos visa estabelecer como os diversos conjun
 
 4. _Suporte de Ferramentas:_ A gestão de requisitos envolve o processamento de um grande número de informações. As ferramentas usadas podem ir desde um sistema de gerenciamento especializado, a planilhas e bases de dados simples.
 
-A gestão de requisitos precisa de suporte automatizado, e as ferramentas de _Software_ pra isso devem ser escolhidas durante a fase de planejamento. As ferramentas são necessárias para:
+O gerenciamento de requisitos precisa de suporte automatizado, e as ferramentas de _Software_ pra isso devem ser escolhidas durante a fase de planejamento. As ferramentas são necessárias para:
 
 1. _Armazenamento de Requisitos:_ Os requisitos devem ser mantidos de forma segura e acessível para todos os envolvidos no processo de engenharia de requisitos;
 
-2. _Gestão de Alterações:_ O processo de gestão de alterações é simplificado e um suporte de ferramentas ativo é usado. Ferramentas podem rastrear mudanças sugeridas e responder a sugestões;
+2. _Gerenciamento de Alterações:_ O processo de gestão de alterações é simplificado e um suporte de ferramentas ativo é usado. Ferramentas podem rastrear mudanças sugeridas e responder a sugestões;
 
-3. _Gestão de Rastreabilidade:_ Como discutido acima, o suporte de ferramentas para rastreabilidade permite que requisitos relacionados sejam descobertos.
+3. _Gerenciamento de Rastreabilidade:_ Como discutido acima, o suporte de ferramentas para rastreabilidade permite que requisitos relacionados sejam descobertos.
 
-### 2.6.2 - Gestão de Alterações de Requisitos
+### 2.6.2 - Gerenciamento de Alterações de Requisitos
 
+> O Gerenciamento de Alterações de Requisitos deve ser aplicado a todas as mudanças propostas aos requisitos do sistema depois que o documento de requisitos for aprovado. Ele é essencial, pois é necessário decidir se a implementação proposta é necessária e viável.
 
+A vantagem de se usar um processo formal para gerenciar as mudanças é que todas as propostas são tratadas de forma consistente e mudanças no documento de requisitos são feitas de forma controlada.
+
+Existem três etapas principais no processo de gerenciamento de alterações:
+
+1. _Análise do Problema e Especificação da Alteração:_ O processo se inicia com um problema de requisitos identificado, ou com uma proposta de alteração específica. Durante esta etapa, o problema ou proposta é analisado. Essa análise retorna para o requisitor da alteração, que deve responder com uma proposta mais detalhada, ou decidir abandonar a alteração;
+
+2. _Análise e Custeio de Alterações:_ Os efeitos das alterações propostas são avaliados usando informações de rastreabilidade e conhecimentos gerais sobre os requisitos. Os custos de realizar as alterações são estimados. Com essa análise feita, é decidido se as alterações serão realizadas;
+
+3. _Implementação das Alterações:_ O documento de requisitos deve ser organizado para que seja possível alterá-lo sem retrabalho extensivo. Assim como programas, documentos têm maior mutabilidade ao se minimizar referências externas e criar seções o mais modulares possível. Então, seções individuais podem ser alteradas e substituídas sem afetar outras partes do documento.
+
+Se um novo requisito precisa ser implementado com urgência, sempre há a tentação de aplicar a alteração e modificar o documento de requisitos retrospectivamente. É quase inevitável que esse processo leve ao descompasso das especificações de requisitos com a implementação do sistema. É importante que o documento de requisitos seja sempre atualizado o quanto antes, quando uma alteração acontecer.
 
 >## Pontos Chave do Capítulo
 >
@@ -881,6 +893,14 @@ A gestão de requisitos precisa de suporte automatizado, e as ferramentas de _So
 >* Mudanças de negócio, organizacionais e técnicas levam, inevitavelmente, a mudanças de requisitos do sistema de _Software_. Gerenciamento de Requisitos é o processo de gerenciar e controlar tais mudanças.
 
 # 3 - Desenvolvimento Ágil
+
+## 3.1 - Métodos Ágeis
+
+## 3.2 - Técnicas de Desenvolvimento Ágil
+
+## 3.3 - Gerenciamento de Projetos Ágeis
+
+## 3.4 - Escalonando Métodos Ágeis
 
 # 4 - _Design_ e Implementação
 
