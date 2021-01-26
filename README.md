@@ -894,13 +894,142 @@ Se um novo requisito precisa ser implementado com urgência, sempre há a tenta�
 
 # 3 - Desenvolvimento Ágil
 
+> É praticamente impossível criar de primeira um conjunto completo de requisitos estáveis de _Software_. Somente depois da entrega do sistema, quando os usuários poderão utilizá-lo e ganhar experiência com seu uso, é que todos os requisitos reais ficam claros. E mesmo assim, fatores externos ainda podem afetá-los.
+
+Desenvolvimento ágil, ou metodologias ágeis, são projetados para produzir _Software_ útil de forma rápida. Todas as metodologias ágeis propostas compartilham algumas características comuns:
+
+1. Os processos de Especificação, Projeto e Implementação são intercalados. Não há especificação detalhada do sistema, e a documentação do projeto é minimizada ou gerada automaticamente durante o desenvolvimento. O documento de requisitos é uma definição genérica das características mais importantes do sistema;
+
+2. O sistema é desenvolvido em uma série de incrementos. Usuários e partes interessadas são envolvidos no processo de avaliação de cada incremento, levantando possíveis necessidades extras;
+
+3. Ferramentas são utilizadas no processo de desenvolvimento. Ferramentas comuns envolvem testes, configurações e integração.
+
 ## 3.1 - Métodos Ágeis
 
+Métodos ágeis permitem que o time de desenvolvimento pudesse focar no _Software_ em si, ao invés de projeto e documentação. Eles são mais aplicáveis em sistemas onde os requisitos mudam rapidamente. Eles visam cortar as burocracias do processo, evitando trabalhos duvidosos de longo prazo e eliminando documentação desnecessária.
+
+A filosofia por trás dos métodos ágeis é refletida no [Manifesto Ágil](http://agilemanifesto.org/iso/ptbr/manifesto.html):
+
+>Estamos descobrindo maneiras melhores de desenvolver
+software, fazendo-o nós mesmos e ajudando outros a
+fazerem o mesmo. Através deste trabalho, passamos a valorizar:<br>  
+__Indivíduos e interações__ mais que _processos e ferramentas_  
+__Software em funcionamento__ mais que _documentação abrangente_  
+__Colaboração com o cliente__ mais que _negociação de contratos_  
+__Responder a mudanças__ mais que _seguir um plano_<br>  
+Ou seja, mesmo havendo valor nos itens à direita,
+valorizamos mais os itens à esquerda.
+
+Métodos ágeis funcionam bem em situações onde seja possível ter comunicação contínua entre o cliente e a equipe de desenvolvimento.
+
 ## 3.2 - Técnicas de Desenvolvimento Ágil
+
+No final dos anos 90, foi desenvolvida a metodologia conhecida como _Extreme Programming_ (Programação Extrema), conhecida por XP.
+
+Apesar de não ser utilizada em sua completude atualmente, as práticas propostas pela XP são usadas em metodologias ágeis até hoje. Seus princípios e práticas são listados na Tabela 3.1 e os mais utilizados são explicados nesta seção.
+
+<table class="tg center">
+  <caption>Tabela 3.1 - Práticas da Programação Extrema (XP)</caption>
+  <thead>
+    <tr>
+      <th class="tg-lt">Princípio ou Prática</th>
+      <th class="tg-lt">Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-lt">Posse Coletiva</td>
+      <td class="tg-lt">
+        Os pares de desenvolvedores trabalham em todas as áreas do sistema, evitando ilhas de conhecimento e ampliando a responsabilidade pelo código a toda a equipe.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Integração Contínua</td>
+      <td class="tg-lt">
+        Assim que o trabalho de uma tarefa é concluído, seu código é integrado ao sistema. A integração deve passar por todos os testes unitários.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Planejamento Incremental</td>
+      <td class="tg-lt">
+        Requisitos são registrados em "cartões de história". As histórias inclusas num "<i>release</i>" são determinadas pelo seu tempo de execução e sua prioridade relativa. As histórias são quebradas em atividades pelos desenvolvedores.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Cliente à Vista</td>
+      <td class="tg-lt">
+        Um representante do usuário final (cliente) deve estar sempre ao alcance. Ele faz parte da equipe de desenvolvimento e é responsável por avaliar os requisitos durante o desenvolvimento.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Programação em Pares</td>
+      <td class="tg-lt">
+        Desenvolvedores trabalham em pares, checando o trabalho do outro e garantindo a qualidade do programa.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Refatoração</td>
+      <td class="tg-lt">
+        Todos os desenvolvedores devem refatorar o código continuamente sempre que melhorias forem encontradas. Isso mantém o código simples e sustentável.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Projeto Simples</td>
+      <td class="tg-lt">
+        O projeto abarca os requisitos levantados no momento, e apenas eles.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Pequenas Entregas</td>
+      <td class="tg-lt">
+        O conjunto mínimo de funcionalidades que entrega valor de negócio é desenvolvido primeiro. Entregas do sistema são frequentes e adicionam funcionalidades incrementalmente.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Ritmo Sustentável</td>
+      <td class="tg-lt">
+        Sobrecarga e trabalho extra não são aceitáveis, pois pode reduzir a qualidade do código e a produtividade da equipe.
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-lt">Desenvolvimento "Teste-Primeiro"</td>
+      <td class="tg-lt">
+        Um <i>Framework</i> de testes unitários é usado para escrever testes para uma nova funcionalidade antes dele começar a ser desenvolvida.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+### 3.2.1 - Histórias de Usuários
+
+> A ideia de "Histórias de Usuários" traz cenários de uso que podem ser experienciados pelos usuários do sistema.
+
+As histórias são criadas com o cliente e colocadas em "cartões". Elas descrevem brevemente as necessidades de uso. A equipe de desenvolvimento então deve se basear na história para desenvolver as funcionalidades necessárias.
+
+Histórias de Usuários podem ser usadas no planejamento de iterações do sistema. Uma vez que os cartões de histórias são desenvolvidos, a equipe deve quebrá-las em atividades e estimar os recursos e esforços necessários para cada uma. O cliente então deve priorizar as funcionalidades, elencando quais histórias devem ser desenvolvidas imediatamente para entregar um ambiente de negócio funcional. A intenção é identificar funcionalidades prioritárias que podem ser entregues no próximo "_release_" do sistema.
+
+A maior dificuldade das histórias de usuário é a completude. É sempre trabalhoso julgar quando uma história mostra uma visão completa de uma atividade. Usuários experientes costumam ser tão familiarizados com o trabalho que acabam deixando coisas de fora.
+
+### 3.2.2 - Refatoração
+
+
+
+### 3.2.3 - Desenvolvimento "Teste-Primeiro"
+
+### 3.2.4 - Programação em Pares
 
 ## 3.3 - Gerenciamento de Projetos Ágeis
 
 ## 3.4 - Escalonando Métodos Ágeis
+
+### 3.4.1 - Problemas Práticos com Métodos Ágeis
+
+### 3.4.2 - Métodos Ágeis e Orientados a Plano
+
+### 3.4.3 - Métodos Ágeis em Sistemas Grandes
+
+### 3.4.4 - Métodos Ágeis Entre Organizações
 
 # 4 - _Design_ e Implementação
 
