@@ -20,7 +20,7 @@ Ao se falar sobre processos, normalmente falamos sobre as atividades do processo
    
 2. _Papéis_ refletem as responsabilidades das pessoas envolvidas no processo, como gerente de projeto, gerente de configurações e desenvolvedor;
    
-3. _Pré e pós condições_ devem ser atendidas antes ou depois de uma atividade ser cumprida ou um produto finalizado. Por exemplo, antes de se iniciar o projeto de arquitetura, uma pré-condição pode ser que o cliente tenha aprovado todos os requisitos definidos; depois que o projeto for concluído, uma pós-condião pode ser que os modelos UML que descrevem a arquitetura tenham sido revisados.
+3. _Pré e pós condições_ devem ser atendidas antes ou depois de uma atividade ser cumprida ou um produto finalizado. Por exemplo, antes de se iniciar o projeto de arquitetura, uma pré-condição pode ser que o cliente tenha aprovado todos os requisitos definidos; depois que o projeto for concluído, uma pós-condição pode ser que os modelos UML que descrevem a arquitetura tenham sido revisados.
 
 ## 1.1 - Modelos de Processo de _Software_
 
@@ -1012,8 +1012,6 @@ Histórias de Usuários podem ser usadas no planejamento de iterações do siste
 A maior dificuldade das histórias de usuário é a completude. É sempre trabalhoso julgar quando uma história mostra uma visão completa de uma atividade. Usuários experientes costumam ser tão familiarizados com o trabalho que acabam deixando coisas de fora.
 
 ### 3.2.2 - Refatoração
-
-
 
 ### 3.2.3 - Desenvolvimento "Teste-Primeiro"
 
